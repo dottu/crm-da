@@ -9,20 +9,30 @@
 
 ## Đã thêm mới ở bước này — nhập dữ liệu ngay trong phiên xem
 
-Theo yêu cầu bổ sung, mỗi màn hình (trừ Dashboard) giờ có thể **thêm dữ liệu thử trực tiếp khi đang xem demo**, để thao tác cho khách hàng thấy sinh động hơn là một trang tĩnh:
+Theo yêu cầu bổ sung, **tất cả 7 màn hình kể cả Dashboard** giờ có thể **thêm dữ liệu thử trực tiếp khi đang xem demo**, để thao tác cho khách hàng thấy sinh động hơn là một trang tĩnh:
 
 | Màn hình | Thao tác thêm được |
 |---|---|
-| Khách hàng tiềm năng | Nút có sẵn "+ Thêm Lead mới" giờ mở form nhập, thêm 1 dòng Lead mới vào đầu bảng |
-| Pipeline | Nút có sẵn "+ Thêm Cơ hội Mới" mở form, thêm 1 thẻ vào cột "Mới tạo"; thẻ mới có thêm 1 ô chọn nhỏ để chuyển giai đoạn |
-| Báo giá | Nút có sẵn "+ Thêm dòng từ Danh mục" mở form nhập sản phẩm/giá vốn/giá bán, tự tính % margin dòng theo đúng quy tắc SX ≥ 17% / TM ≥ 12%, cập nhật số "X dòng sản phẩm" |
-| Chăm sóc & Khiếu nại | Thêm 1 nút "+ Ghi nhận Khiếu nại" (màn hình gốc chưa có nút này) mở form, thêm 1 dòng phiếu khiếu nại mới vào đầu bảng |
-| Báo cáo doanh số | Các ô nhập "DS tháng này" (vốn đã có sẵn trên trang) giờ tự tính lại % biến động ngay khi gõ số, đúng logic ngưỡng "biến động đáng kể" ±15% |
+Mỗi thao tác thêm đều **hiển thị ngay trên giao diện** — không chỉ thêm dòng/thẻ mà các số tổng hợp liên quan cũng cập nhật theo:
 
-**Cách làm — để không đụng vào thiết kế Stitch:**
+| Màn hình | Thao tác thêm được | Số liệu tự cập nhật |
+|---|---|---|
+| Mọi trang (header dùng chung) | "+ Tạo nhanh Báo giá": form khách hàng/sản phẩm đầu tiên, tạo báo giá mới và chuyển sang trang Báo giá (áp dụng ngay nếu đang đứng sẵn ở đó) | Dòng mới + tổng tiền ở trang Báo giá |
+| Dashboard / trang mặc định | "Tạo việc mới": thêm thẻ việc vào "Cần xử lý hôm nay" (có nút "Đánh dấu hoàn tất"); "Cập nhật liên hệ": ghi 1 dòng nhật ký liên hệ vào thẻ; "Xem ticket" / "Điều chỉnh báo giá" chuyển tới trang tương ứng; "Chỉ đường KCN" mở Google Maps | "04 Việc gấp" và "N tác vụ ưu tiên cao" (khi việc mới ở mức Khẩn cấp) |
+| Khách hàng tiềm năng | "+ Thêm Lead mới" (chọn ngành, NVKD); "Chuyển thành Cơ hội" chuyển sang Pipeline và tự thêm thẻ cơ hội; "Lưu nháp" hồ sơ | Tổng Lead, số Lead + % theo ngành, "Hiển thị 1 - N trong số T" |
+| Pipeline | "+ Thêm Cơ hội Mới" (thẻ có ô chọn chuyển giai đoạn); nhận cơ hội chuyển từ Lead | Số thẻ + tổng giá trị ở tiêu đề từng cột (kể cả khi chuyển giai đoạn), "N Cơ hội • X Tỷ VNĐ" |
+| Báo giá | "+ Thêm dòng từ Danh mục", "Nhập từ Excel báo giá", "Đính thêm tài liệu", "Cấu hình hệ số chiết khấu bổ sung" (chiết khấu toàn đơn), "Lưu nháp", "Gửi duyệt Giám đốc KD" (đổi nhãn DRAFT → CHỜ DUYỆT) | Số dòng sản phẩm, thanh tổng cố định phía dưới: tổng SL, giá vốn, chưa VAT, chiết khấu, VAT 8%, tổng thanh toán, margin toàn đơn và cảnh báo dòng dưới ngưỡng |
+| Chăm sóc & Khiếu nại | "+ Ghi nhận Khiếu nại" (nút được chèn thêm), "+ Thêm file" đính kèm, "Tạm lưu cập nhật" (ghi phương án xử lý vào Audit Trail) | Các tab "Tất cả / Mới tiếp nhận", "Đang mở", "Hiển thị N phiếu", "Trang 1/x", số "mốc ghi nhận" |
+| Báo cáo doanh số | "+ Thêm khách hàng" (nút được chèn thêm), gõ "DS tháng này", "Chọn tệp từ máy"/kéo thả file Excel, "Xuất template Excel" (tải CSV), "Lưu nháp", "Lưu báo cáo tháng" (kiểm tra giải trình biến động ≥ 15%), "Hủy bỏ" (hoàn tác) | "DS tháng này đã nhập", % đạt chỉ tiêu, chênh lệch chu kỳ, số khách hàng biến động lớn, "N khách hàng" |
+
+Các nút không thuộc nhóm "thêm/lưu dữ liệu" (chuông thông báo, phân trang, bộ lọc trạng thái, menu ⋮ từng dòng, thu gọn/đóng panel, xuất PDF/CSV, xem lịch sử giá/PDF) vẫn giữ nguyên như bản Stitch gốc.
+
+**Cách làm — để hạn chế tối đa việc đụng vào thiết kế Stitch:**
 - Toàn bộ logic trên nằm trong **1 file JS mới duy nhất**: `interactivity.js`.
-- Mỗi file HTML chỉ được thêm **đúng 1 dòng** `<script src="interactivity.js"></script>` ngay trước `</body>` — không có thay đổi nào khác trong 7 file HTML gốc (đã diff lại để xác nhận).
+- Mỗi file HTML chỉ thêm **đúng 1 dòng** `<script src="interactivity.js"></script>` ngay trước `</body>` (kể cả `dashboard.html`/`index.html` — trước đây 2 file này chưa có dòng script nên các nút thêm dữ liệu trên Dashboard hoàn toàn không hoạt động) — không có thay đổi nào khác trong nội dung/thiết kế 7 file HTML gốc.
 - Khi thêm dữ liệu mới, script **clone lại đúng 1 dòng/thẻ có sẵn** trong trang rồi chỉ đổi nội dung chữ bên trong — nên dòng/thẻ mới có giao diện giống 100% các dòng/thẻ do Stitch vẽ (không tự vẽ giao diện mới). Điểm khác biệt duy nhất: dòng/thẻ mới có gắn 1 nhãn nhỏ màu cam "MỚI" để phân biệt với dữ liệu mẫu gốc, và có thêm 1 nút/khung nhập (dạng modal) đơn giản tự thiết kế — vì màn hình gốc của Stitch chưa có sẵn form nhập liệu nào.
+- Chuyển dữ liệu giữa các trang (VD: "Tạo nhanh Báo giá" ở header, hoặc "Chuyển thành Cơ hội" từ Lead sang Pipeline) dùng `sessionStorage` của trình duyệt làm hàng đợi tạm — trang đích tự đọc và chèn dữ liệu ngay khi tải xong.
+- Đã sửa 1 lỗi có sẵn trong bản xuất gốc của Stitch trên `pipeline.html`: modal "Xác nhận Chốt đơn thành công" (`#modal-win-deal`) bị thiếu class `hidden` nên hiển thị đè kín toàn trang ngay từ đầu — `interactivity.js` tự ẩn modal này khi tải trang.
 - **Dữ liệu chỉ tồn tại trong bộ nhớ trình duyệt của phiên xem hiện tại** — mất khi tải lại trang (F5) hoặc đóng tab, vì đây vẫn là bản demo tĩnh, không có backend/lưu trữ thật.
 
 ## Danh sách file
