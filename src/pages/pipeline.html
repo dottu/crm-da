@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-container":"#0f766e","outline-variant":"#bdc9c6","primary-fixed":"#9cf2e8","on-surface":"#0b1c30","surface-container-lowest":"#ffffff","surface-dim":"#cbdbf5","surface-container-highest":"#d3e4fe","on-primary-container":"#a3faef","on-tertiary-container":"#ffe4e1","primary-fixed-dim":"#80d5cb","on-primary-fixed-variant":"#00504a","outline":"#6e7977","surface-container-high":"#dce9ff","on-primary":"#ffffff","inverse-on-surface":"#eaf1ff","surface-tint":"#006a63","secondary-fixed-dim":"#ffb77d","tertiary":"#a7000f","on-background":"#0b1c30","error":"#ba1a1a","surface-container-low":"#eff4ff","primary":"#005c55","on-error":"#ffffff","tertiary-fixed-dim":"#ffb4ab","surface-bright":"#f8f9ff","error-container":"#ffdad6","on-secondary":"#ffffff","secondary-container":"#fe932c","secondary":"#904d00","on-secondary-fixed":"#2f1500","on-secondary-container":"#663500","secondary-fixed":"#ffdcc3","on-secondary-fixed-variant":"#6e3900","inverse-surface":"#213145","surface-container":"#e5eeff","surface":"#f8f9ff","on-primary-fixed":"#00201d","on-surface-variant":"#3e4947","tertiary-fixed":"#ffdad6","surface-variant":"#d3e4fe","background":"#f8f9ff","on-tertiary-fixed-variant":"#93000b","inverse-primary":"#80d5cb","tertiary-container":"#cf1b1e","on-error-container":"#93000a","on-tertiary-fixed":"#410002","on-tertiary":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1rem","space-md":"0.75rem","gutter-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xl":"1.5rem","space-lg":"1rem","margin":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"data-mono":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"data-mono":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="CleanTech CRM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuev4fnCUsDfOFWhm70cQybU-uwhlH7hsmf2iyP9YYH7PvY1rAzk-jrxwF1QJCMLdvpTS9tW5_7RmzxiipOZIrs_uwpp7_We_scEXlJgzZAWFCVqCW_K2CxS2BEODzhrW3W_xoj7dtZ9_-g9M1QL8W_Pt5ttP0RIHRNGrIbSFatO8mA5Sg4MxKhR8VwHaNx6r5nWFXnPf5Qmr6_A0hFSCrgE_Ak7DmKPr3JIGgxH8lax91p0VE-vc"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CleanTech CRM</span><span class="font-label-sm text-label-sm text-outline tracking-normal mt-0.5">KCN Supplies Portal</span></div></div><div class="mt-space-xs"><span class="inline-flex items-center px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">NVKD Portal • Cleanroom Spec</span></div></div><nav class="flex flex-col px-space-sm gap-space-xs mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="dashboard.html"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="khach-hang-tiem-nang" href="khach-hang-tiem-nang.html"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-md text-label-md">Khách hàng tiềm năng (Lead)</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded transition-all bg-primary-container text-on-primary-container font-headline-sm shadow-sm" data-path="pipeline" href="pipeline.html"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-label-md text-label-md">Pipeline</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bao-gia" href="bao-gia.html"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Báo giá</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cham-soc-khieu-nai" href="cham-soc-khieu-nai.html"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">Chăm sóc &amp; Khiếu nại</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bao-cao-doanh-so" href="bao-cao-doanh-so.html"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-label-md text-label-md">Báo cáo doanh số</span></a></nav></div><div class="p-space-md bg-surface-container-low mx-space-sm mb-space-md rounded flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">domain</span><span class="truncate font-semibold">KCN VSIP 1 &amp; KCN Quang Châu</span></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-secondary">call</span><span>Hotline: 1900 8826 (Phòng Sạch)</span></div><div class="flex items-center justify-between pt-space-xs text-outline font-body-sm text-body-sm"><span class="font-data-mono text-data-mono">v2.4.0-prod</span><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary"><span class="h-1.5 w-1.5 rounded-full bg-primary-container inline-block"></span>ISO Class 5-8</span></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded outline-none shadow-sm focus:ring-2 focus:ring-primary" placeholder="Tìm kiếm nhanh khách hàng, MST, dự án KCN... (Nhấn /)" type="text"/></div></div><div class="flex items-center gap-space-md"><button class="inline-flex items-center gap-space-xs h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-label-md text-label-md shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Tạo nhanh Báo giá</span></button><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="h-8 w-px bg-outline-variant/30"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKz6ljzJFpJLrCDmHqRmNSeUFerYc_wM87aA4spJC9fz2uNjkEODfLcwu6arvCnl6fOSIqx6FX8g1Wyy5dZOyn0deEmSvCnnOT4hgq7GrBRytCQtHcu7SKUm8t6vZ5HI18exit5eIhvzUicNvlxMgi27kmnddt59N0NmvqlJIjzU5O036jvz7i0cBcuSf_XK0YR5_1ksO_GlXrapiJ8Fb6lbzcwGMFojy0RCGHm8qyAr78vHYus18"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Nguyễn Văn Hùng</span><span class="font-body-sm text-body-sm text-outline max-w-[210px] truncate leading-tight">Trưởng nhóm KD - Thiết bị &amp; Vật tư Phòng sạch KCN Bắc Ninh</span></div></div></div></header><main class="w-full pt-16 bg-surface px-gutter-lg py-gutter-lg min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Pipeline Header & Context Bar -->
+<div class="flex flex-col gap-space-md mb-gutter-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<span>KCN Cleanroom CRM</span>
+<span>•</span>
+<span class="text-primary font-semibold">Q2/2025 Quota Tracking</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface">Tiến độ Bán hàng &amp; Chuyển đổi Pipeline</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+            30 Cơ hội • 13.50 Tỷ VNĐ
+          </span>
+</div>
+</div>
+<!-- Quick Action Utilities -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 rounded bg-surface-container-highest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Tùy biến cột</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 rounded bg-surface-container-highest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Xuất Báo cáo CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 rounded bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 transition-opacity" onclick="document.getElementById('modal-win-deal').classList.toggle('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Thêm Cơ hội Mới</span>
+</button>
+</div>
+</div>
+<!-- Filter Toolbar -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<!-- Search Input -->
+<div class="relative min-w-[240px] max-w-xs flex-1">
+<span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-8 pr-space-md bg-surface text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded outline-none shadow-sm focus:ring-2 focus:ring-primary-container" id="pipeline-search" placeholder="Lọc theo khách hàng, sản phẩm..." type="text"/>
+</div>
+<!-- Filter: KCN Region -->
+<div class="relative">
+<select class="h-9 px-space-md pr-8 rounded bg-surface font-body-sm text-body-sm text-on-surface outline-none shadow-sm focus:ring-2 focus:ring-primary-container appearance-none cursor-pointer">
+<option value="all">Tất cả KCN (Bắc Bộ)</option>
+<option value="bacninh">KCN Bắc Ninh (VSIP 1, Yên Phong)</option>
+<option value="bacgiang">KCN Bắc Giang (Quang Châu, Vân Trung)</option>
+<option value="haiphong">KCN Hải Phòng (Deep C, Tràng Duệ)</option>
+<option value="vinhphuc">KCN Vĩnh Phúc (Bình Xuyên, Thăng Long)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">arrow_drop_down</span>
+</div>
+<!-- Filter: Min Value -->
+<button class="h-9 px-space-md rounded bg-surface text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md inline-flex items-center gap-space-xs shadow-sm" id="btn-filter-value" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">monetization_on</span>
+<span>Giá trị &gt; 500 Triệu</span>
+</button>
+<!-- Filter: ISO Spec -->
+<button class="h-9 px-space-md rounded bg-surface text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md inline-flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Phòng sạch Class 100 - 10,000</span>
+</button>
+<!-- Stale follow-up alert highlight toggle -->
+<button class="h-9 px-space-md rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md inline-flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">warning</span>
+<span>Quá 14 ngày cần follow-up (3)</span>
+</button>
+</div>
+<!-- Live Drag & Drop Hint -->
+<div class="hidden xl:flex items-center gap-space-xs text-outline font-label-sm text-label-sm bg-surface-container-low px-space-md py-1.5 rounded">
+<span class="material-symbols-outlined text-[16px] text-primary">drag_indicator</span>
+<span>Kéo &amp; thả thẻ để cập nhật giai đoạn • Chốt đơn mở phiếu xác nhận</span>
+</div>
+</div>
+</div>
+<!-- Kanban Stage Board: 5 Columns -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-space-md items-start w-full overflow-x-auto pb-gutter-lg">
+<!-- COLUMN 1: MỚI TẠO -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[280px]" data-stage="moi-tao">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Mới tạo</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container font-data-mono text-data-mono text-[11px] text-on-surface-variant font-semibold">6</span>
+</div>
+<span class="font-data-mono text-data-mono font-bold text-on-surface text-right">1.25 Tỷ</span>
+</div>
+<div class="flex flex-col gap-space-sm min-h-[500px]" id="column-stage-1">
+<!-- Opportunity Card 1.1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Yên Phong</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật hôm qua</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Samsung Electronics HCMC (Văn phòng Bắc Ninh)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Khẩu trang 3 lớp phòng sạch vô trùng &amp; Mũ trùm đầu trùm tai chống tĩnh điện ESD.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">verified</span> ISO Class 5
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              240.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 1.2 (STALE WARNING > 14 DAYS) -->
+<div class="bg-[#fffbeb] p-space-md rounded-lg shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs relative overflow-hidden" draggable="true">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold w-fit">
+<span class="material-symbols-outlined text-[14px] text-secondary">warning</span>
+<span>⚠️ Treo 17 ngày không tương tác</span>
+</div>
+<div class="flex items-center justify-between pt-0.5">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-semibold">KCN Khai Quang</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">17 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Dược phẩm Hà Tây GMP
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Hepa Filter H14 kiểm chuẩn DOP &amp; Găng tay cao su vô trùng phòng sạch Pharma Class B.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[14px]">schedule</span> Cần gán lại Sale
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              430.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 1.3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN VSIP Bắc Ninh</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 2 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Goertek Vina Technology
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Thảm dính bụi phòng sạch (Sticky Mat 30 lớp) màu xanh dương 600x900mm.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">inventory_2</span> 1,200 tấm
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              185.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 1.4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Tràng Duệ</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 4 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            LG Innotek Hải Phòng
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Con lăn dính bụi Silicon tĩnh điện &amp; Giấy in phòng sạch khổ A4 Cleanroom Paper.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">pending</span> Test mẫu thử
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              395.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 2: ĐANG TƯ VẤN -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[280px]" data-stage="dang-tu-van">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Đang tư vấn</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container font-data-mono text-data-mono text-[11px] text-on-surface-variant font-semibold">8</span>
+</div>
+<span class="font-data-mono text-data-mono font-bold text-on-surface text-right">3.40 Tỷ</span>
+</div>
+<div class="flex flex-col gap-space-sm min-h-[500px]" id="column-stage-2">
+<!-- Opportunity Card 2.1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Quang Châu</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 1 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Foxconn Quang Châu (FII)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Quần áo phòng sạch liền mũ chống tĩnh điện ESD sọc carbon 5mm, may đo theo spec Apple.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">science</span> Gửi mẫu đợt 2
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              1.120.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 2.2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Yên Bình</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 3 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Sunny Optical Technology
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Giấy lau phòng sạch siêu mịn Bemcot M-3 &amp; Tăm bông phòng sạch Huby-340.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">straighten</span> Khảo sát xưởng
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              560.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 2.3 (STALE WARNING > 14 DAYS) -->
+<div class="bg-[#fffbeb] p-space-md rounded-lg shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs relative overflow-hidden" draggable="true">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold w-fit">
+<span class="material-symbols-outlined text-[14px] text-secondary">warning</span>
+<span>⚠️ Quá 15 ngày cần follow-up</span>
+</div>
+<div class="flex items-center justify-between pt-0.5">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-semibold">KCN Đồng Văn IV</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">15 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            KMW Việt Nam (Viễn thông &amp; LED)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Hệ thống giầy chống tĩnh điện 4 lỗ PVC &amp; Dép ESD phòng sạch phòng lắp ráp SMT.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[14px]">phone_missed</span> Chưa phản hồi
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              680.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 2.4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Thăng Long II</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 5 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Hoya Glass Disk Vietnam
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Bao ngón tay cao su tĩnh điện Finger Cots không bột phủ clo, đóng gói chân không.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">task_alt</span> Spec đã duyệt
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              440.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 3: ĐÃ BÁO GIÁ -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[280px]" data-stage="da-bao-gia">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Đã báo giá</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container font-data-mono text-data-mono text-[11px] text-on-surface-variant font-semibold">5</span>
+</div>
+<span class="font-data-mono text-data-mono font-bold text-on-surface text-right">2.80 Tỷ</span>
+</div>
+<div class="flex flex-col gap-space-sm min-h-[500px]" id="column-stage-3">
+<!-- Opportunity Card 3.1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Quang Châu</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật hôm qua</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Luxshare-ICT (Vân Trung - Việt Yên)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Khẩu trang phòng sạch 4 lớp than hoạt tính &amp; Bộ đồ Cleanroom Coverall phòng chống bụi vi sợi.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">request_quote</span> BG-2025/042
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              920.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 3.2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Đại An</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 2 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Sumitomo Bakelite Vietnam
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Màng film che phòng sạch chống tĩnh điện ESD PVC Sheet và rèm từ ngăn khí buồng Air Shower.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">description</span> Đợi Procurement
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              510.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 3.3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN VSIP Hải Phòng</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 4 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Nipro Pharma Vietnam
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Găng tay Latex tiệt trùng Gamma phòng chiết rót thuốc tiêm vô khuẩn Class A.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">verified</span> CoA/CoC Attached
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              780.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 3.4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN VSIP Bắc Ninh</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 6 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Foster Electric Bac Ninh
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Khăn lau vi sợi Microfiber 80/20 dùng cho phòng thí nghiệm âm học acoustics.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">timer</span> Hết hạn báo giá: 3d
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              590.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 4: ĐÀM PHÁN -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[280px]" data-stage="dam-phan">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Đàm phán</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container font-data-mono text-data-mono text-[11px] text-on-surface-variant font-semibold">4</span>
+</div>
+<span class="font-data-mono text-data-mono font-bold text-on-surface text-right">1.95 Tỷ</span>
+</div>
+<div class="flex flex-col gap-space-sm min-h-[500px]" id="column-stage-4">
+<!-- Opportunity Card 4.1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Yên Phong II-C</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật hôm nay</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Amkor Technology Vietnam
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Vật tư lọc khí HEPA Fan Filter Unit (FFU 1175x575) &amp; Quần áo chống tĩnh điện phòng Cleanroom bán dẫn.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">handshake</span> Chiết khấu đợt cuối
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              860.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 4.2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Thăng Long 3</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 2 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            TOTO Vietnam Precision
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Găng tay cao su Nitrile không bột 12 inch Cleanroom Class 100 chuyên phòng sơn mạ phủ gương.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">edit_note</span> Điều khoản thanh toán
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              420.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 4.3 (DRAGGABLE TO WIN - SPECIAL HIGHLIGHT) -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true" id="card-hana-deal">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-semibold">KCN Vân Trung</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">Sẵn sàng chốt hợp đồng</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Công ty TNHH Hana Micron Vina
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            50.000 đôi Găng tay Nitrile &amp; 1.000 cuộn Sticky Mat dính bụi phòng sạch bán dẫn.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<button class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-colors" onclick="openDealModal()" type="button">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Kích hoạt Chốt đơn
+            </button>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-primary-container text-right">
+              485.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 4.4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">KCN Nội Bài</span>
+<span class="font-body-sm text-body-sm text-outline">Cập nhật 4 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Yamaha Motor Electronics
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Bình xịt chống tĩnh điện Antistatic Spray &amp; Vòng đeo tay xả tĩnh điện có dây tiếp địa.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">gavel</span> Pháp chế duyệt HĐ
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface text-right">
+              185.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 5: CHỐT ĐƠN (THÀNH CÔNG) -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[280px]" data-stage="chot-don">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Chốt đơn (Thành công)</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-data-mono text-data-mono text-[11px] font-bold">7</span>
+</div>
+<span class="font-data-mono text-data-mono font-bold text-primary text-right">4.10 Tỷ</span>
+</div>
+<div class="flex flex-col gap-space-sm min-h-[500px]" id="column-stage-5">
+<!-- Opportunity Card 5.1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-semibold">Đã xuất PO #CT-883</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">Giao hàng T5</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Pegatron Vietnam (Hải Phòng)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Găng tay Latex vô trùng 100% &amp; Hộp pass-box điện tử phòng sạch tiêu chuẩn SMT.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> Kế toán đã ghi nhận
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-primary text-right">
+              1.450.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 5.2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-semibold">Đã ký HĐ 03/2025</span>
+<span class="font-body-sm text-body-sm text-outline">Hoàn tất hôm qua</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            Canon Vietnam (Quế Võ)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Vật tư tiêu hao phòng kính: Giấy lau chống xước M-3 và Nhíp gắp linh kiện ceramic ESD.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">receipt</span> Đã tạm ứng 30%
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-primary text-right">
+              890.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+<!-- Opportunity Card 5.3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing flex flex-col gap-space-xs group" draggable="true">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-semibold">KCN Deep C 2A</span>
+<span class="font-body-sm text-body-sm text-outline">3 ngày trước</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+            VinFast Battery Division (Cell EV)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Quần áo chống tĩnh điện liền ủng Cleanroom cấp độ Dry-room ẩm &lt; 1% RH.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Đang bàn giao kho
+            </span>
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-primary text-right">
+              1.760.000.000 <span class="font-body-sm text-body-sm text-outline font-normal">VNĐ</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Mini Overview & Cleanroom Metrics Strip -->
+<div class="mt-space-lg grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">TỶ LỆ CHUYỂN ĐỔI BÁO GIÁ</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">58.4%</span>
+<span class="font-body-sm text-body-sm text-primary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +4.2% so với tháng trước
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">percent</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">GIÁ TRỊ DEAL BÌNH QUÂN</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">450 Tr</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span> Chu kỳ chốt: 19.5 ngày
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">CƠ HỘI TREO &gt; 14 NGÀY</span>
+<span class="font-headline-lg text-headline-lg text-secondary font-bold">3 Deals</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span> Tổng giá trị 1.34 Tỷ VNĐ
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">warning_amber</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">MỤC TIÊU DOANH SỐ Q2</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold">13.5 / 16.0 Tỷ</span>
+<div class="w-36 h-2 bg-surface-container rounded-full overflow-hidden mt-1.5">
+<div class="bg-primary-container h-full rounded-full" style="width: 84%"></div>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">flag</span>
+</div>
+</div>
+</div>
+<!-- POPUP MODAL XÁC NHẬN CHỐT ĐƠN (Interactive Demo Modal) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-space-md transition-opacity" id="modal-win-deal">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-xl shadow-2xl overflow-hidden flex flex-col">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">Xác nhận Chốt đơn thành công</span>
+<span class="font-body-sm text-body-sm text-outline">Chuyển trạng thái Cơ hội • Kích hoạt quy trình Xuất kho &amp; Kế toán</span>
+</div>
+</div>
+<button class="text-outline hover:text-on-surface p-1 rounded" onclick="closeDealModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Target Opportunity Card Preview -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-semibold">Khách hàng KCN Vân Trung</span>
+<span class="font-data-mono text-data-mono font-bold text-primary-container text-[16px]">485.000.000 VNĐ</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">
+            Công ty TNHH Hana Micron Vina
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Hạng mục: <strong>50.000 đôi Găng tay Nitrile Cleanroom</strong> &amp; <strong>1.000 cuộn Sticky mat phòng sạch</strong>
+</p>
+</div>
+<!-- Workflow Configuration -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Ngày yêu cầu xuất kho</label>
+<div class="relative">
+<input class="w-full h-9 px-space-sm bg-surface font-body-sm text-body-sm text-on-surface rounded outline-none shadow-sm focus:ring-2 focus:ring-primary-container" type="date" value="2025-05-18"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Điều khoản thanh toán hợp đồng</label>
+<select class="w-full h-9 px-space-sm bg-surface font-body-sm text-body-sm text-on-surface rounded outline-none shadow-sm focus:ring-2 focus:ring-primary-container cursor-pointer">
+<option>T/T 30 ngày sau khi nhận hóa đơn VAT</option>
+<option>Thanh toán 100% khi giao hàng đợt 1</option>
+<option>Tạm ứng 40% • Còn lại 60% sau nghiệm thu</option>
+</select>
+</div>
+</div>
+<!-- Checkbox triggers for automation -->
+<div class="flex flex-col gap-space-xs p-space-sm rounded bg-surface-container">
+<label class="flex items-center gap-space-sm cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Tự động đẩy thông tin hợp đồng sang Kế toán xuất hóa đơn điện tử</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Khóa giữ tồn kho tại Kho Tổng KCN Quế Võ (Lot 2025-05-CR)</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer select-none">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Gửi thông báo Zalo ZNS kèm file Scan Hợp đồng đến Purchasing Director</span>
+</label>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-lowest flex items-center justify-end gap-space-sm">
+<button class="px-space-lg h-10 rounded bg-surface-container-highest text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" onclick="closeDealModal()" type="button">
+          Hủy bỏ
+        </button>
+<button class="px-space-xl h-10 rounded bg-primary-container hover:opacity-95 text-on-primary font-label-md text-label-md shadow-md transition-all flex items-center gap-space-xs" onclick="confirmWinDeal()" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Xác nhận chốt đơn</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Success Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-success">
+<div class="flex items-center gap-space-sm px-space-lg py-space-md rounded-xl bg-inverse-surface text-inverse-on-surface shadow-2xl">
+<span class="material-symbols-outlined text-primary-fixed text-[22px]">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface">Thành công! Cơ hội đã chốt đơn</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Hana Micron Vina đã chuyển sang giai đoạn Kế toán &amp; Chuẩn bị xuất kho.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function openDealModal() {
+    const modal = document.getElementById('modal-win-deal');
+    if (modal) {
+      modal.classList.remove('hidden');
+    }
+  }
+
+  function closeDealModal() {
+    const modal = document.getElementById('modal-win-deal');
+    if (modal) {
+      modal.classList.add('hidden');
+    }
+  }
+
+  function confirmWinDeal() {
+    closeDealModal();
+    
+    // Animate target card moving into "Chốt đơn (Thành công)" column
+    const dealCard = document.getElementById('card-hana-deal');
+    const winColumn = document.getElementById('column-stage-5');
+    if (dealCard && winColumn) {
+      winColumn.prepend(dealCard);
+      dealCard.classList.add('animate-pulse');
+      setTimeout(() => dealCard.classList.remove('animate-pulse'), 1500);
+    }
+
+    // Show toast
+    const toast = document.getElementById('toast-success');
+    if (toast) {
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }, 4000);
+    }
+  }
+
+  // Basic HTML5 Drag and Drop simulation for the cards
+  document.addEventListener('DOMContentLoaded', () => {
+    let draggedCard = null;
+
+    const cards = document.querySelectorAll('[draggable="true"]');
+    cards.forEach(card => {
+      card.addEventListener('dragstart', (e) => {
+        draggedCard = card;
+        e.dataTransfer.effectAllowed = 'move';
+        card.classList.add('opacity-40');
+      });
+
+      card.addEventListener('dragend', () => {
+        card.classList.remove('opacity-40');
+      });
+    });
+
+    const dropZones = document.querySelectorAll('[id^="column-stage-"]');
+    dropZones.forEach(zone => {
+      zone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        zone.parentElement.classList.add('bg-surface-container-high');
+      });
+
+      zone.addEventListener('dragleave', () => {
+        zone.parentElement.classList.remove('bg-surface-container-high');
+      });
+
+      zone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        zone.parentElement.classList.remove('bg-surface-container-high');
+        if (draggedCard) {
+          zone.appendChild(draggedCard);
+
+          // If dropped into column-stage-5 (Chốt đơn), trigger modal confirmation
+          if (zone.id === 'column-stage-5') {
+            openDealModal();
+          }
+        }
+      });
+    });
+
+    // Simple search filtering
+    const searchInput = document.getElementById('pipeline-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        document.querySelectorAll('[draggable="true"]').forEach(c => {
+          const text = c.innerText.toLowerCase();
+          c.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+    }
+
+    // Toggle > 500tr filter button
+    const filterValueBtn = document.getElementById('btn-filter-value');
+    let isValueFiltered = false;
+    if (filterValueBtn) {
+      filterValueBtn.addEventListener('click', () => {
+        isValueFiltered = !isValueFiltered;
+        if (isValueFiltered) {
+          filterValueBtn.classList.add('bg-primary-container', 'text-on-primary');
+          filterValueBtn.classList.remove('bg-surface', 'text-on-surface');
+        } else {
+          filterValueBtn.classList.remove('bg-primary-container', 'text-on-primary');
+          filterValueBtn.classList.add('bg-surface', 'text-on-surface');
+        }
+      });
+    }
+  });
+</script></main></div><script src="interactivity.js"></script></body></html>

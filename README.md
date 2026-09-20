@@ -1,18 +1,14 @@
-# stitch_cleanroom_b2b_sales_crm (1) — Bản deploy Vercel
+# stitch_cleanroom_b2b_sales_crm (1) — Bản deploy Vercel (1 file duy nhất)
 
-Đây là **đúng nguyên bộ 7 file HTML** đã dựng từ export Google Stitch trước đó (thư mục `stitch_cleanroom_b2b_sales_crm (1)` bạn đã có trên máy) — **không chỉnh sửa thêm bất kỳ nội dung/mã nào**, chỉ đóng gói lại để deploy tĩnh lên Vercel.
+Toàn bộ 6 màn hình dựng từ export Google Stitch (Dashboard, Khách hàng tiềm năng, Pipeline, Báo giá, Chăm sóc & Khiếu nại, Báo cáo doanh số) được **gộp thành 1 file `index.html` duy nhất** — HTML, JS đều nhúng sẵn trong file, chỉ tải thêm Tailwind/Google Fonts từ Internet. Chỉ cần deploy/mở đúng file này.
 
-## Đã giữ nguyên 100% (đúng yêu cầu "không sáng tạo")
-
-- Toàn bộ HTML/CSS (Tailwind)/nội dung/hình ảnh giữ **y nguyên** như bản Stitch xuất ra.
-- Thay đổi **duy nhất** đã làm từ trước (không đổi thêm gì ở bước này): các thuộc tính `href="#"` giữa các mục menu điều hướng đã được trỏ sang đúng tên file tương ứng (`dashboard.html`, `pipeline.html`, `bao-gia.html`, `cham-soc-khieu-nai.html`, `khach-hang-tiem-nang.html`, `bao-cao-doanh-so.html`) để click chuyển trang hoạt động được khi deploy tĩnh. Đã kiểm tra bằng diff từng byte so với bản Stitch gốc — không có thay đổi nào khác ngoài href đó.
+- Dùng chung 1 sidebar + 1 header; bấm menu bên trái để chuyển màn hình **không tải lại trang**. Mỗi màn hình có địa chỉ riêng: `index.html#dashboard`, `#khach-hang-tiem-nang`, `#pipeline`, `#bao-gia`, `#cham-soc-khieu-nai`, `#bao-cao-doanh-so`.
+- Nội dung/thiết kế từng màn hình giữ nguyên như bản Stitch (chỉ thống nhất sidebar/header theo 1 mẫu, và gộp cấu hình Tailwind của 6 trang thành 1).
 
 ## Đã thêm mới ở bước này — nhập dữ liệu ngay trong phiên xem
 
-Theo yêu cầu bổ sung, **tất cả 7 màn hình kể cả Dashboard** giờ có thể **thêm dữ liệu thử trực tiếp khi đang xem demo**, để thao tác cho khách hàng thấy sinh động hơn là một trang tĩnh:
+Theo yêu cầu bổ sung, **cả 6 màn hình (kể cả Dashboard)** đều có thể **thêm dữ liệu thử trực tiếp khi đang xem demo**, để thao tác cho khách hàng thấy sinh động hơn là một trang tĩnh.
 
-| Màn hình | Thao tác thêm được |
-|---|---|
 Mỗi thao tác thêm đều **hiển thị ngay trên giao diện** — không chỉ thêm dòng/thẻ mà các số tổng hợp liên quan cũng cập nhật theo:
 
 | Màn hình | Thao tác thêm được | Số liệu tự cập nhật |
@@ -25,28 +21,37 @@ Mỗi thao tác thêm đều **hiển thị ngay trên giao diện** — không 
 | Chăm sóc & Khiếu nại | "+ Ghi nhận Khiếu nại" (nút được chèn thêm), "+ Thêm file" đính kèm, "Tạm lưu cập nhật" (ghi phương án xử lý vào Audit Trail) | Các tab "Tất cả / Mới tiếp nhận", "Đang mở", "Hiển thị N phiếu", "Trang 1/x", số "mốc ghi nhận" |
 | Báo cáo doanh số | "+ Thêm khách hàng" (nút được chèn thêm), gõ "DS tháng này", "Chọn tệp từ máy"/kéo thả file Excel, "Xuất template Excel" (tải CSV), "Lưu nháp", "Lưu báo cáo tháng" (kiểm tra giải trình biến động ≥ 15%), "Hủy bỏ" (hoàn tác) | "DS tháng này đã nhập", % đạt chỉ tiêu, chênh lệch chu kỳ, số khách hàng biến động lớn, "N khách hàng" |
 
-Các nút không thuộc nhóm "thêm/lưu dữ liệu" (chuông thông báo, phân trang, bộ lọc trạng thái, menu ⋮ từng dòng, thu gọn/đóng panel, xuất PDF/CSV, xem lịch sử giá/PDF) vẫn giữ nguyên như bản Stitch gốc.
+**Sửa / Xóa** — mọi dòng/thẻ dữ liệu đều sửa và xóa được (kể cả dữ liệu mẫu gốc), có hộp xác nhận trước khi xóa và số liệu tổng hợp tự tính lại:
+
+| Màn hình | Nút Sửa / Xóa |
+|---|---|
+| Khách hàng tiềm năng | Nút ⋮ ở cột "Thao tác" của từng dòng mở menu **Sửa thông tin / Xóa Lead**; tổng Lead, số Lead + % theo ngành, "Hiển thị 1 - N" tự cập nhật |
+| Pipeline | Mỗi thẻ cơ hội có **Sửa / Xóa** ở góc dưới; số thẻ + tổng giá trị của cột và "N Cơ hội • X Tỷ" tự cập nhật (đã sửa lưới 5 cột không còn chồng lên nhau ở màn hình nhỏ hơn ~1500px — bảng cuộn ngang) |
+| Báo giá | Mỗi dòng có icon ✏️ **Sửa** cạnh icon 🗑 **Xóa** (icon thùng rác gốc trước đây không có tác dụng); STT được đánh lại, tổng SL/giá vốn/VAT/tổng thanh toán/margin toàn đơn và danh sách dòng dưới ngưỡng tính lại |
+| Chăm sóc & Khiếu nại | Mỗi phiếu có **Sửa / Xóa** dưới mã phiếu; các tab trạng thái, "Đang mở", "Hiển thị N phiếu" tự tính lại theo trạng thái phiếu |
+| Dashboard | Mỗi việc có **Sửa / Xóa**; việc do người dùng tạo còn đổi được mức ưu tiên, "Việc gấp" tự cập nhật |
+| Báo cáo doanh số | Mỗi khách hàng đang nhập được có **Sửa / Xóa** (dòng "Đã import" bị khóa nên không có); tổng DS, DS tháng trước, chênh lệch, số khách biến động lớn tự tính lại; "Hủy bỏ" hoàn tác cả dòng đã xóa, "Lưu báo cáo tháng" chốt số liệu làm mốc mới |
+
+Các nút không thuộc nhóm "thêm/lưu dữ liệu" (chuông thông báo, phân trang, bộ lọc trạng thái, thu gọn/đóng panel, xuất PDF/CSV, xem lịch sử giá/PDF) vẫn giữ nguyên như bản Stitch gốc.
 
 **Cách làm — để hạn chế tối đa việc đụng vào thiết kế Stitch:**
-- Toàn bộ logic trên nằm trong **1 file JS mới duy nhất**: `interactivity.js`.
-- Mỗi file HTML chỉ thêm **đúng 1 dòng** `<script src="interactivity.js"></script>` ngay trước `</body>` (kể cả `dashboard.html`/`index.html` — trước đây 2 file này chưa có dòng script nên các nút thêm dữ liệu trên Dashboard hoàn toàn không hoạt động) — không có thay đổi nào khác trong nội dung/thiết kế 7 file HTML gốc.
+- Toàn bộ logic thêm dữ liệu nằm trong `src/app.js` (được nhúng vào `index.html` khi dựng file).
+- Mỗi màn hình là 1 khối `<main data-page="...">`; mã chỉ thao tác trong phạm vi khối của màn hình đó nên các nút trùng tên giữa các trang không ảnh hưởng nhau.
 - Khi thêm dữ liệu mới, script **clone lại đúng 1 dòng/thẻ có sẵn** trong trang rồi chỉ đổi nội dung chữ bên trong — nên dòng/thẻ mới có giao diện giống 100% các dòng/thẻ do Stitch vẽ (không tự vẽ giao diện mới). Điểm khác biệt duy nhất: dòng/thẻ mới có gắn 1 nhãn nhỏ màu cam "MỚI" để phân biệt với dữ liệu mẫu gốc, và có thêm 1 nút/khung nhập (dạng modal) đơn giản tự thiết kế — vì màn hình gốc của Stitch chưa có sẵn form nhập liệu nào.
-- Chuyển dữ liệu giữa các trang (VD: "Tạo nhanh Báo giá" ở header, hoặc "Chuyển thành Cơ hội" từ Lead sang Pipeline) dùng `sessionStorage` của trình duyệt làm hàng đợi tạm — trang đích tự đọc và chèn dữ liệu ngay khi tải xong.
-- Đã sửa 1 lỗi có sẵn trong bản xuất gốc của Stitch trên `pipeline.html`: modal "Xác nhận Chốt đơn thành công" (`#modal-win-deal`) bị thiếu class `hidden` nên hiển thị đè kín toàn trang ngay từ đầu — `interactivity.js` tự ẩn modal này khi tải trang.
+- Thao tác liên màn hình ("Tạo nhanh Báo giá" ở header, "Chuyển thành Cơ hội" từ Lead sang Pipeline) gọi thẳng hàm của màn hình đích rồi chuyển tới màn hình đó — không cần tải lại trang.
+- Đã sửa 1 lỗi có sẵn trong bản xuất gốc của Stitch trên `pipeline.html`: modal "Xác nhận Chốt đơn thành công" (`#modal-win-deal`) bị thiếu class `hidden` nên hiển thị đè kín toàn trang ngay từ đầu — `src/app.js` tự ẩn modal này khi tải trang.
 - **Dữ liệu chỉ tồn tại trong bộ nhớ trình duyệt của phiên xem hiện tại** — mất khi tải lại trang (F5) hoặc đóng tab, vì đây vẫn là bản demo tĩnh, không có backend/lưu trữ thật.
 
-## Danh sách file
+## Cấu trúc thư mục
 
-| File | Màn hình |
+| Đường dẫn | Vai trò |
 |---|---|
-| `index.html` | Trang mặc định (nội dung giống `dashboard.html`) |
-| `dashboard.html` | Dashboard |
-| `khach-hang-tiem-nang.html` | Khách hàng tiềm năng (Lead) |
-| `pipeline.html` | Pipeline |
-| `bao-gia.html` | Báo giá |
-| `cham-soc-khieu-nai.html` | Chăm sóc & Khiếu nại |
-| `bao-cao-doanh-so.html` | Báo cáo doanh số |
-| `interactivity.js` | File JS mới — cho phép thêm dữ liệu thử trong phiên (xem mục trên) |
+| `index.html` | **File duy nhất cần deploy** (được sinh ra bởi `src/build.js`) |
+| `src/app.js` | Mã thêm dữ liệu + router chuyển màn hình |
+| `src/pages/*.html` | 6 màn hình Stitch gốc dùng làm nguồn để gộp |
+| `src/build.js` | Gộp `src/pages` + `src/app.js` thành `index.html` — chạy: `node src/build.js` |
+
+> Các file `dashboard.html`, `khach-hang-tiem-nang.html`, `pipeline.html`, `bao-gia.html`, `cham-soc-khieu-nai.html`, `bao-cao-doanh-so.html`, `interactivity.js` ở thư mục gốc là bản cũ (nhiều file) — không còn cần thiết cho `index.html`, có thể xóa.
 
 ## Lưu ý quan trọng — đây là bản mockup thị giác, KHÔNG có logic/dữ liệu thật
 
