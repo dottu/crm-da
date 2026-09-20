@@ -1,55 +1,51 @@
-# CRM Đông Anh — Bản Demo tĩnh (deploy Vercel)
+# stitch_cleanroom_b2b_sales_crm (1) — Bản deploy Vercel
 
-Đây là **bản demo giao diện + luồng nghiệp vụ** để cho khách hàng/Ban lãnh đạo xem trước, dùng để trình bày trên Vercel. Khác với bản đầy đủ (Node.js + SQLite, có lưu dữ liệu thật), bản này:
+Đây là **đúng nguyên bộ 7 file HTML** đã dựng từ export Google Stitch trước đó (thư mục `stitch_cleanroom_b2b_sales_crm (1)` bạn đã có trên máy) — **không chỉnh sửa thêm bất kỳ nội dung/mã nào**, chỉ đóng gói lại để deploy tĩnh lên Vercel.
 
-- **Không có backend/server** — chạy 100% trong trình duyệt (HTML/CSS/JS thuần, không framework, không build step).
-- **Toàn bộ dữ liệu là dữ liệu mẫu (mockup) hoàn toàn hư cấu** — 6 khách hàng, 1 Lead, 5 Cơ hội, 3 Báo giá, 2 Khiếu nại, 6 tháng doanh số — không có tên/thông tin khách hàng thật, không có SĐT/CCCD thật.
-- **Dữ liệu chỉ lưu tạm trong bộ nhớ trình duyệt (JS)** — mọi thao tác (thêm Lead, chuyển giai đoạn, duyệt báo giá...) chỉ tồn tại trong phiên xem hiện tại, **mất khi tải lại trang (F5)**. Đây là chủ đích để tránh hiểu nhầm là dữ liệu thật được lưu lại.
-- Có banner cảnh báo màu vàng cố định ở đầu trang: *"BẢN DEMO — TOÀN BỘ DỮ LIỆU LÀ DỮ LIỆU MẪU..."* để người xem không nhầm với số liệu thật.
+## Đã giữ nguyên 100% (đúng yêu cầu "không sáng tạo")
 
-Logic nghiệp vụ (margin báo giá, SLA khiếu nại, bắt buộc lý do khi mất cơ hội, không cho sửa báo giá đã gửi, chặn nhập tay đè dữ liệu import...) được **giữ đúng y hệt** bản backend thật — chỉ khác là chạy bằng JavaScript ngay trong trình duyệt thay vì gọi API server. Xem chi tiết từng quy tắc trong `js/app.js` (phần đầu file, đã copy nguyên từ `lib/business-rules.js` của bản đầy đủ).
+- Toàn bộ HTML/CSS (Tailwind)/nội dung/hình ảnh giữ **y nguyên** như bản Stitch xuất ra.
+- Thay đổi **duy nhất** đã làm từ trước (không đổi thêm gì ở bước này): các thuộc tính `href="#"` giữa các mục menu điều hướng đã được trỏ sang đúng tên file tương ứng (`dashboard.html`, `pipeline.html`, `bao-gia.html`, `cham-soc-khieu-nai.html`, `khach-hang-tiem-nang.html`, `bao-cao-doanh-so.html`) để click chuyển trang hoạt động được khi deploy tĩnh. Đã kiểm tra bằng diff từng byte so với bản Stitch gốc — không có thay đổi nào khác ngoài href đó.
+
+## Danh sách file
+
+| File | Màn hình |
+|---|---|
+| `index.html` | Trang mặc định (nội dung giống `dashboard.html`) |
+| `dashboard.html` | Dashboard |
+| `khach-hang-tiem-nang.html` | Khách hàng tiềm năng (Lead) |
+| `pipeline.html` | Pipeline |
+| `bao-gia.html` | Báo giá |
+| `cham-soc-khieu-nai.html` | Chăm sóc & Khiếu nại |
+| `bao-cao-doanh-so.html` | Báo cáo doanh số |
+
+## Lưu ý quan trọng — đây là bản mockup thị giác, KHÔNG có logic/dữ liệu thật
+
+- Đây thuần là **giao diện tĩnh do Stitch tạo** để demo hình ảnh/luồng điều hướng cho khách hàng xem — **không có backend, không lưu dữ liệu, không tính toán nghiệp vụ thật** (không giống bản `crm-dong-anh-app` hay bản demo tương tác `crm-dong-anh-vercel-demo` đã gửi trước đó).
+- Các số liệu, tên khách hàng hiển thị trên các màn hình này là do Stitch tự sinh khi thiết kế — **không được xác nhận là dữ liệu chuẩn theo PRD**, chỉ mang tính minh hoạ giao diện.
+- Trang cần **kết nối Internet khi xem** vì tải các tài nguyên ngoài: Tailwind CSS (`cdn.tailwindcss.com`), Google Fonts, Material Symbols, và vài ảnh minh hoạ từ `googleusercontent.com`. Khi deploy lên Vercel (có Internet) thì hiển thị bình thường.
 
 ## Deploy lên Vercel
 
-Đây là site tĩnh (static site) — không cần cấu hình gì thêm.
+Đây là site tĩnh thuần HTML — không cần build command.
 
-**Cách 1 — kéo thả (nhanh nhất, không cần Git):**
+**Cách 1 — kéo thả nhanh:**
 1. Vào https://vercel.com/new
-2. Chọn "Deploy" rồi kéo thả cả thư mục này vào (hoặc dùng lệnh CLI bên dưới).
+2. Kéo thả cả thư mục này vào để deploy.
 
-**Cách 2 — qua GitHub (khuyến nghị nếu muốn cập nhật sau này):**
+**Cách 2 — qua GitHub:**
 1. Đẩy thư mục này lên 1 repo GitHub mới.
-2. Vào https://vercel.com/new, chọn "Import Git Repository", chọn repo vừa tạo.
-3. Vercel tự nhận diện đây là site tĩnh (Framework Preset: "Other") — không cần Build Command, không cần Output Directory (để mặc định hoặc "./"). Bấm Deploy.
+2. Vào https://vercel.com/new → Import Git Repository → chọn repo.
+3. Framework Preset chọn "Other", không cần Build Command / Output Directory. Bấm Deploy.
 
-**Cách 3 — dùng Vercel CLI:**
+**Cách 3 — CLI:**
 ```bash
 npm i -g vercel
-cd crm-dong-anh-vercel-demo
+cd stitch_cleanroom_b2b_sales_crm_1
 vercel --prod
 ```
 
-Sau khi deploy xong, Vercel cho 1 link dạng `https://<ten-project>.vercel.app` để gửi khách hàng xem trực tiếp trên trình duyệt — không cần cài đặt gì.
-
-## Khác biệt so với bản đầy đủ (có backend + lưu dữ liệu thật)
-
-| | Bản demo tĩnh (thư mục này) | Bản đầy đủ (`crm-dong-anh-app`) |
-|---|---|---|
-| Backend | Không có — chạy hoàn toàn trên trình duyệt | Node.js (server.js) + `node:sqlite` |
-| Lưu dữ liệu | Chỉ trong bộ nhớ JS, mất khi F5 | File SQLite thật, lưu vĩnh viễn |
-| Deploy | Vercel / bất kỳ static hosting nào | Cần môi trường chạy Node.js (VPS, server nội bộ...) |
-| Mục đích | Demo giao diện + luồng nghiệp vụ cho khách xem | Ứng dụng dùng thật, cần server riêng |
-
-**Lưu ý quan trọng**: khi khách hàng duyệt xong giao diện/luồng ở bản demo này, phần lưu trữ dữ liệu thật vẫn cần dùng bản đầy đủ (`crm-dong-anh-app`) hoặc kiến trúc production do Ban lãnh đạo/dev lead phê duyệt — bản demo này **không phải** là sản phẩm cuối cùng.
-
-## Cấu trúc
-
-```
-crm-dong-anh-vercel-demo/
-├── index.html       # Trang duy nhất (SPA điều hướng bằng JS)
-├── css/style.css     # Toàn bộ style
-└── js/app.js          # Business rules + dữ liệu mẫu + logic UI (tất cả trong 1 file)
-```
+Sau khi deploy, Vercel trả về link dạng `https://<ten-project>.vercel.app/index.html` — gửi khách hàng bấm xem trực tiếp trên trình duyệt, có thể click chuyển qua lại giữa 6 màn hình qua menu bên trái.
 
 ---
-*Sinh bởi AI theo vai trò draft/prototype builder — không tự động deploy, không tự động push code. Người dùng tự kiểm tra và tự deploy lên Vercel/GitHub theo quy trình nội bộ.*
+*Đóng gói bởi AI theo đúng yêu cầu "sử dụng chính xác mã code cung cấp, không sáng tạo" — không có nội dung/thiết kế nào bị thay đổi ngoài đường link điều hướng nội bộ đã nêu ở trên.*

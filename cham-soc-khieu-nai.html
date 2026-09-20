@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-container":"#0f766e","outline-variant":"#bdc9c6","primary-fixed":"#9cf2e8","on-surface":"#0b1c30","surface-container-lowest":"#ffffff","surface-dim":"#cbdbf5","surface-container-highest":"#d3e4fe","on-primary-container":"#a3faef","on-tertiary-container":"#ffe4e1","primary-fixed-dim":"#80d5cb","on-primary-fixed-variant":"#00504a","outline":"#6e7977","surface-container-high":"#dce9ff","on-primary":"#ffffff","inverse-on-surface":"#eaf1ff","surface-tint":"#006a63","secondary-fixed-dim":"#ffb77d","tertiary":"#a7000f","on-background":"#0b1c30","error":"#ba1a1a","surface-container-low":"#eff4ff","primary":"#005c55","on-error":"#ffffff","tertiary-fixed-dim":"#ffb4ab","surface-bright":"#f8f9ff","error-container":"#ffdad6","on-secondary":"#ffffff","secondary-container":"#fe932c","secondary":"#904d00","on-secondary-fixed":"#2f1500","on-secondary-container":"#663500","secondary-fixed":"#ffdcc3","on-secondary-fixed-variant":"#6e3900","inverse-surface":"#213145","surface-container":"#e5eeff","surface":"#f8f9ff","on-primary-fixed":"#00201d","on-surface-variant":"#3e4947","tertiary-fixed":"#ffdad6","surface-variant":"#d3e4fe","background":"#f8f9ff","on-tertiary-fixed-variant":"#93000b","inverse-primary":"#80d5cb","tertiary-container":"#cf1b1e","on-error-container":"#93000a","on-tertiary-fixed":"#410002","on-tertiary":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1rem","space-md":"0.75rem","gutter-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xl":"1.5rem","space-lg":"1rem","margin":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"data-mono":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"data-mono":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="CleanTech CRM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuev4fnCUsDfOFWhm70cQybU-uwhlH7hsmf2iyP9YYH7PvY1rAzk-jrxwF1QJCMLdvpTS9tW5_7RmzxiipOZIrs_uwpp7_We_scEXlJgzZAWFCVqCW_K2CxS2BEODzhrW3W_xoj7dtZ9_-g9M1QL8W_Pt5ttP0RIHRNGrIbSFatO8mA5Sg4MxKhR8VwHaNx6r5nWFXnPf5Qmr6_A0hFSCrgE_Ak7DmKPr3JIGgxH8lax91p0VE-vc"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CleanTech CRM</span><span class="font-label-sm text-label-sm text-outline tracking-normal mt-0.5">KCN Supplies Portal</span></div></div><div class="mt-space-xs"><span class="inline-flex items-center px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">NVKD Portal • Cleanroom Spec</span></div></div><nav class="flex flex-col px-space-sm gap-space-xs mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="dashboard.html"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="khach-hang-tiem-nang" href="khach-hang-tiem-nang.html"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-md text-label-md">Khách hàng tiềm năng (Lead)</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pipeline" href="pipeline.html"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-label-md text-label-md">Pipeline</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bao-gia" href="bao-gia.html"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Báo giá</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded transition-all bg-primary-container text-on-primary-container font-headline-sm shadow-sm" data-path="cham-soc-khieu-nai" href="cham-soc-khieu-nai.html"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">Chăm sóc &amp; Khiếu nại</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bao-cao-doanh-so" href="bao-cao-doanh-so.html"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-label-md text-label-md">Báo cáo doanh số</span></a></nav></div><div class="p-space-md bg-surface-container-low mx-space-sm mb-space-md rounded flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">domain</span><span class="truncate font-semibold">KCN VSIP 1 &amp; KCN Quang Châu</span></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-secondary">call</span><span>Hotline: 1900 8826 (Phòng Sạch)</span></div><div class="flex items-center justify-between pt-space-xs text-outline font-body-sm text-body-sm"><span class="font-data-mono text-data-mono">v2.4.0-prod</span><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary"><span class="h-1.5 w-1.5 rounded-full bg-primary-container inline-block"></span>ISO Class 5-8</span></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded outline-none shadow-sm focus:ring-2 focus:ring-primary" placeholder="Tìm kiếm nhanh khách hàng, MST, dự án KCN... (Nhấn /)" type="text"/></div></div><div class="flex items-center gap-space-md"><button class="inline-flex items-center gap-space-xs h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-label-md text-label-md shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Tạo nhanh Báo giá</span></button><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="h-8 w-px bg-outline-variant/30"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKz6ljzJFpJLrCDmHqRmNSeUFerYc_wM87aA4spJC9fz2uNjkEODfLcwu6arvCnl6fOSIqx6FX8g1Wyy5dZOyn0deEmSvCnnOT4hgq7GrBRytCQtHcu7SKUm8t6vZ5HI18exit5eIhvzUicNvlxMgi27kmnddt59N0NmvqlJIjzU5O036jvz7i0cBcuSf_XK0YR5_1ksO_GlXrapiJ8Fb6lbzcwGMFojy0RCGHm8qyAr78vHYus18"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Nguyễn Văn Hùng</span><span class="font-body-sm text-body-sm text-outline max-w-[210px] truncate leading-tight">Trưởng nhóm KD - Thiết bị &amp; Vật tư Phòng sạch KCN Bắc Ninh</span></div></div></div></header><main class="w-full pt-16 bg-surface px-gutter-lg py-gutter-lg min-h-screen"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Top Stat Bar & Title Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[15px] text-primary">verified_user</span>
+<span>Hệ thống Bảo hành &amp; Kiểm chuẩn Phòng Sạch KCN</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Chăm sóc &amp; Khiếu nại khách hàng KCN
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Theo dõi sự cố vật tư phòng sạch, kiểm soát nồng độ hạt bụi và thực thi cam kết SLA khẩn cấp tại các nhà máy KCN.
+      </p>
+</div>
+<!-- Live SLA Quick Counters -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-primary-fixed flex items-center justify-center text-primary font-headline-sm text-headline-sm">
+          14
+        </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Đang mở</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">Tất cả KCN</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-error-container flex items-center justify-center text-tertiary-container font-headline-sm text-headline-sm animate-pulse">
+          02
+        </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Quá hạn SLA</span>
+<span class="font-data-mono text-data-mono text-tertiary-container font-semibold">Cần xử lý gấp</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-secondary-fixed flex items-center justify-center text-secondary font-headline-sm text-headline-sm">
+          05
+        </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Chờ QC / Kho</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">Mẫu thử test</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter Toolbar (Full Density) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<!-- Status Segmented Tabs -->
+<div class="flex items-center justify-between gap-space-md flex-wrap border-b border-surface-container-high/60 pb-space-sm">
+<div class="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5">
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-high text-on-surface font-semibold flex items-center gap-1.5 transition-colors" type="button">
+<span>Tất cả</span>
+<span class="bg-surface-container-lowest text-on-surface px-1.5 py-0.2 rounded font-data-mono text-label-sm">28</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1.5" type="button">
+<span>Mới tiếp nhận</span>
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-1.5 py-0.2 rounded font-data-mono text-label-sm font-semibold">5</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-primary text-on-primary font-semibold flex items-center gap-1.5 shadow-sm" type="button">
+<span>Đang xử lý</span>
+<span class="bg-primary-container text-on-primary-container px-1.5 py-0.2 rounded font-data-mono text-label-sm">9</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1.5" type="button">
+<span>Đã giải quyết</span>
+<span class="bg-surface-container-low text-outline px-1.5 py-0.2 rounded font-data-mono text-label-sm">12</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1.5" type="button">
+<span>Mở lại</span>
+<span class="bg-error-container text-tertiary px-1.5 py-0.2 rounded font-data-mono text-label-sm">2</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">speed</span>
+<span>Cam kết SLA: Cấp độ Khẩn cấp ≤ 4 giờ | Thường ≤ 24 giờ</span>
+</div>
+</div>
+<!-- Secondary Filters Row -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+<!-- Search Input -->
+<div class="md:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-space-md bg-surface text-on-surface text-body-sm font-body-sm rounded-lg outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-sm" placeholder="Tìm theo mã KN, 'màng dính bụi', 'bụi vải', 'lỗi tĩnh điện'..." type="text" value="bụi"/>
+</div>
+<!-- Priority Filter -->
+<div class="md:col-span-3">
+<select class="w-full h-9 px-space-md bg-surface text-on-surface text-body-sm font-body-sm rounded-lg outline-none focus:ring-2 focus:ring-primary shadow-sm appearance-none cursor-pointer">
+<option>Tất cả mức độ ưu tiên</option>
+<option selected="">Khẩn cấp (SLA 4h) - Có rủi ro đóng line</option>
+<option>Cao (SLA 12h)</option>
+<option>Bình thường (SLA 24h)</option>
+</select>
+</div>
+<!-- KCN / Customer Filter -->
+<div class="md:col-span-3">
+<select class="w-full h-9 px-space-md bg-surface text-on-surface text-body-sm font-body-sm rounded-lg outline-none focus:ring-2 focus:ring-primary shadow-sm appearance-none cursor-pointer">
+<option>Tất cả KCN &amp; Cụm công nghiệp</option>
+<option selected="">KCN Vân Trung (Bắc Giang)</option>
+<option>KCN Quang Châu (Bắc Giang)</option>
+<option>KCN VSIP 1 (Bắc Ninh)</option>
+<option>KCN Yên Phong II (Bắc Ninh)</option>
+<option>KCN Đồng Văn IV (Hà Nam)</option>
+</select>
+</div>
+<!-- Reset / Reload -->
+<div class="md:col-span-1 flex items-center justify-end">
+<button class="w-full h-9 bg-surface-container-high hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded-lg flex items-center justify-center transition-colors shadow-sm" title="Làm mới bộ lọc" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Canvas: Two-Panel Responsive Split (List Table 58% + Drawer Details 42%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start relative">
+<!-- LEFT PANEL: Complaints List Table (58% ~ 7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header Status Strip -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between text-outline font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">format_list_bulleted</span>
+<span>Hiển thị 9 phiếu khiếu nại đang tiến hành</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary-container animate-ping"></span>
+<span class="text-tertiary font-semibold">1 ticket cần đổi hàng dự phòng ngay</span>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/40 text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-md font-semibold">Mã &amp; Khách hàng KCN</th>
+<th class="py-2.5 px-space-md font-semibold">Vật tư &amp; Sự cố phòng sạch</th>
+<th class="py-2.5 px-space-md font-semibold">Ưu tiên</th>
+<th class="py-2.5 px-space-md font-semibold text-right">Đếm ngược SLA</th>
+<th class="py-2.5 px-space-md font-semibold text-center">Trạng thái</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface divide-y divide-surface-container-high/40">
+<!-- Row 1 (HIGHLIGHTED / SELECTED) -->
+<tr class="bg-primary-fixed/20 hover:bg-primary-fixed/30 cursor-pointer transition-colors relative" onclick="highlightRow(this)">
+<td class="py-3 px-space-md align-top">
+<div class="flex items-start gap-1.5">
+<div class="w-1.5 h-10 rounded bg-tertiary-container self-stretch"></div>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono font-bold text-primary">KN-2023-089</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight mt-0.5">Cty TNHH Luxshare-ICT</span>
+<span class="text-label-sm font-label-sm text-outline mt-0.5">KCN Vân Trung • Nhà máy Fab 2</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<div class="flex flex-col max-w-[240px]">
+<span class="font-headline-sm text-headline-sm text-tertiary-container text-[13px] leading-tight">
+                    Lô 500 gói giấy lau Kimtech phát sinh hạt bụi vượt chuẩn Class 100
+                  </span>
+<div class="mt-1 flex items-center gap-1.5 flex-wrap">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-data-mono">SKU: KT-WIPE-014</span>
+<span class="text-tertiary font-label-sm text-label-sm">ISO Class 4-5</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Khẩn cấp
+                </span>
+</td>
+<td class="py-3 px-space-md align-top text-right">
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-error/10 text-tertiary font-data-mono text-data-mono font-bold">
+<span class="material-symbols-outlined text-[14px]">timer_off</span>
+                    Quá hạn 01h 15m
+                  </span>
+<span class="text-outline font-label-sm text-label-sm mt-0.5">SLA: 4.0h</span>
+</div>
+</td>
+<td class="py-3 px-space-md align-top text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+                  Đang xử lý
+                </span>
+<span class="block font-label-sm text-label-sm text-outline mt-1 truncate max-w-[85px] mx-auto">N. V. Hùng</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors" onclick="highlightRow(this)">
+<td class="py-3 px-space-md align-top">
+<div class="flex flex-col pl-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">KN-2023-088</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight mt-0.5">Samsung Electronics VN</span>
+<span class="text-label-sm font-label-sm text-outline mt-0.5">KCN Yên Phong • Module Display</span>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<div class="flex flex-col max-w-[240px]">
+<span class="font-label-md text-label-md text-on-surface font-medium leading-tight">
+                    Màng cuộn dính bụi DCR Silicon dính keo dư trên mặt con lăn
+                  </span>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-data-mono">DCR-SIL-08</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+                  Cao (12h)
+                </span>
+</td>
+<td class="py-3 px-space-md align-top text-right">
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-data-mono text-data-mono font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+                    Còn 02h 40m
+                  </span>
+<span class="text-outline font-label-sm text-label-sm mt-0.5">Hết hạn: 17:30</span>
+</div>
+</td>
+<td class="py-3 px-space-md align-top text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                  Chờ QC test
+                </span>
+<span class="block font-label-sm text-label-sm text-outline mt-1 truncate max-w-[85px] mx-auto">T. T. Mai</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors" onclick="highlightRow(this)">
+<td class="py-3 px-space-md align-top">
+<div class="flex flex-col pl-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">KN-2023-086</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight mt-0.5">Hana Micron Vina</span>
+<span class="text-label-sm font-label-sm text-outline mt-0.5">KCN Vân Trung • Xưởng IC Package</span>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<div class="flex flex-col max-w-[240px]">
+<span class="font-label-md text-label-md text-on-surface font-medium leading-tight">
+                    Găng tay Nitrile tĩnh điện ESD sai điện trở bề mặt chuẩn 10^6 - 10^8
+                  </span>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-data-mono">ESD-GLV-M9</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-semibold">
+                  Bình thường
+                </span>
+</td>
+<td class="py-3 px-space-md align-top text-right">
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-data-mono text-data-mono font-semibold text-on-surface-variant">
+                    Còn 14h 10m
+                  </span>
+<span class="text-outline font-label-sm text-label-sm mt-0.5">SLA 24h</span>
+</div>
+</td>
+<td class="py-3 px-space-md align-top text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+                  Đang xử lý
+                </span>
+<span class="block font-label-sm text-label-sm text-outline mt-1 truncate max-w-[85px] mx-auto">V. Q. Toàn</span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors" onclick="highlightRow(this)">
+<td class="py-3 px-space-md align-top">
+<div class="flex flex-col pl-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">KN-2023-084</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight mt-0.5">Foxconn (FII) Bắc Giang</span>
+<span class="text-label-sm font-label-sm text-outline mt-0.5">KCN Quang Châu • Line F3</span>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<div class="flex flex-col max-w-[240px]">
+<span class="font-label-md text-label-md text-on-surface font-medium leading-tight">
+                    Thảm dính bụi Sticky Mat 30 lớp bong keo lớp đáy khi dán cửa Airshower
+                  </span>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-data-mono">STK-MAT-6090</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error-container text-tertiary-container font-label-sm text-label-sm font-semibold">
+                  Khẩn cấp
+                </span>
+</td>
+<td class="py-3 px-space-md align-top text-right">
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-data-mono text-data-mono font-bold text-primary">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+                    Còn 00h 42m
+                  </span>
+<span class="text-outline font-label-sm text-label-sm mt-0.5">SLA: 4.0h</span>
+</div>
+</td>
+<td class="py-3 px-space-md align-top text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+                  Mới tiếp nhận
+                </span>
+<span class="block font-label-sm text-label-sm text-outline mt-1 truncate max-w-[85px] mx-auto">L. H. Nam</span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors" onclick="highlightRow(this)">
+<td class="py-3 px-space-md align-top">
+<div class="flex flex-col pl-2">
+<span class="font-data-mono text-data-mono font-bold text-outline">KN-2023-080</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight mt-0.5">Dược phẩm CPC1 Hà Nội</span>
+<span class="text-label-sm font-label-sm text-outline mt-0.5">Cụm CN Hà Bình Phương • Xưởng BFS</span>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<div class="flex flex-col max-w-[240px]">
+<span class="font-label-md text-label-md text-on-surface font-medium leading-tight">
+                    Quần áo phòng sạch vô trùng thiếu chứng chỉ hấp tiệt trùng Gamma
+                  </span>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-data-mono">ST-SUIT-GMP</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md align-top">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-semibold">
+                  Bình thường
+                </span>
+</td>
+<td class="py-3 px-space-md align-top text-right">
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-data-mono text-data-mono font-semibold text-outline">
+                    Hoàn tất
+                  </span>
+<span class="text-outline font-label-sm text-label-sm mt-0.5">Đã bù COA</span>
+</div>
+</td>
+<td class="py-3 px-space-md align-top text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                  Đã giải quyết
+                </span>
+<span class="block font-label-sm text-label-sm text-outline mt-1 truncate max-w-[85px] mx-auto">N. V. Hùng</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination / Cleanroom Footer Note -->
+<div class="p-space-sm bg-surface flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Hiển thị 5 / 28 phiếu khiếu nại (Trang 1/6)</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface shadow-sm font-medium">1</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container-high text-on-surface">2</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container-high text-on-surface">3</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container-high text-on-surface">›</button>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Slide Drawer Component (~42% Width ~ 5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-xl flex flex-col transition-all duration-300 relative" id="complaintDetailDrawer">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low rounded-t-xl flex items-start justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-tertiary-container bg-error-container px-2 py-0.5 rounded">
+              KN-2023-089
+            </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-bold tracking-wider uppercase">
+<span class="material-symbols-outlined text-[13px]">warning</span> SLA 4h
+            </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1.5 leading-snug">
+            Cty TNHH Luxshare-ICT
+          </h2>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-primary">location_on</span>
+            Nhà máy KCN Vân Trung (Việt Yên, Bắc Giang) - Xưởng SMT Fab 2
+          </span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant flex items-center justify-center shadow-sm transition-colors" title="Đóng chi tiết" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Drawer Meta Grid (4 key badges) -->
+<div class="grid grid-cols-2 gap-space-xs p-space-md bg-surface-container-lowest border-b border-surface-container-high/60 text-body-sm font-body-sm">
+<div class="p-space-sm bg-surface rounded-lg">
+<span class="text-outline font-label-sm text-label-sm block">NVKD phụ trách:</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary">badge</span>
+<span class="font-semibold text-on-surface">Nguyễn Văn Hùng</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface rounded-lg">
+<span class="text-outline font-label-sm text-label-sm block">KTV QC phòng sạch:</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">biotech</span>
+<span class="font-semibold text-on-surface">Đỗ Mạnh Cường</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface rounded-lg">
+<span class="text-outline font-label-sm text-label-sm block">Thời điểm tạo phiếu:</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span class="font-data-mono text-data-mono font-medium text-on-surface">10:15 Hôm nay</span>
+</div>
+</div>
+<div class="p-space-sm bg-error-container/40 rounded-lg">
+<span class="text-tertiary font-label-sm text-label-sm block font-semibold">Tình trạng SLA 4 giờ:</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">crisis_alert</span>
+<span class="font-data-mono text-data-mono font-bold text-tertiary-container">Quá hạn 01h 15m</span>
+</div>
+</div>
+</div>
+<!-- Incident Visual Diagnostic & Detailed Problem Description -->
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Detailed Cleanroom Issue Box -->
+<div class="p-space-md bg-surface rounded-lg border-l-4 border-l-tertiary-container shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-tertiary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">report_problem</span>
+              Mô tả sự cố vật tư phòng sạch (ISO 14644-1)
+            </span>
+<span class="px-2 py-0.5 bg-surface-container-high rounded font-data-mono text-label-sm text-on-surface-variant font-semibold">
+              Batch: KIM-2023-10-VTR
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mt-1">
+            Khách phản ánh mẫu test đo hạt bụi tại phòng Cleanroom Fab 2 phát hiện nồng độ hạt 
+            <strong class="font-semibold text-tertiary">0.5µm vượt ngưỡng quy chuẩn ISO Class 100 (Class 5)</strong> 
+            nghi do màng đóng gói giấy lau bị xước viền. Cần kiểm tra lô hàng date 10/2023 và 
+            <strong class="font-semibold text-primary">đổi ngay 100 gói dự phòng tại kho Bắc Ninh</strong> cho chuyền lắp ráp camera module.
+          </p>
+<!-- Particle Count Micro Visualization Graph (Inline SVG) -->
+<div class="mt-space-sm p-space-sm bg-surface-container-lowest rounded flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Kiểm tra hạt 0.5µm/m³ (Quy chuẩn vs Thực đo tại line):</span>
+<span class="font-data-mono text-tertiary font-bold">Thực đo: 7,420 hạt (Vượt 110%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 48%" title="Chuẩn ISO Class 5 (≤ 3,520 hạt)"></div>
+<div class="bg-tertiary-container h-full animate-pulse" style="width: 52%" title="Phần hạt vượt chuẩn"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>0</span>
+<span class="text-primary font-semibold">Chuẩn Class 5: 3,520</span>
+<span class="text-tertiary font-bold">Đo thực tế: 7,420</span>
+</div>
+</div>
+</div>
+<!-- Audit Trail Timeline -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">
+              Lịch sử xử lý &amp; Audit Trail
+            </span>
+<span class="font-label-sm text-label-sm text-outline">3 mốc ghi nhận</span>
+</div>
+<div class="flex flex-col relative pl-4 mt-1 space-y-3 before:absolute before:left-1.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Timeline Item 1 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="absolute -left-4 mt-1 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-label-sm font-bold text-primary">10:15</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Tiếp nhận khiếu nại từ Trưởng phòng Mua hàng Luxshare</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">Người tiếp nhận: NVKD Nguyễn Văn Hùng qua kênh Hotline kỹ thuật</span>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="absolute -left-4 mt-1 w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-label-sm font-bold text-secondary">11:00</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">NVKD đã gửi mẫu sang phòng Kiểm định QC CleanTech</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">Bàn giao 02 bao mẫu thử niêm phong cho KTV Đỗ Mạnh Cường test máy đếm hạt</span>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="absolute -left-4 mt-1 w-2.5 h-2.5 rounded-full bg-tertiary ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-label-sm font-bold text-tertiary">11:45</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Phòng QC xác nhận rách mép hút chân không do vận chuyển</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">Biên bản test QC-VT-098: Lực hút chân không bị suy hao &gt; 35%, lọt vi bụi mép hàn</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ACTION REQUIRED FORM (Bắt buộc để đóng/chuyển bước) -->
+<div class="mt-space-xs p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">assignment_turned_in</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-[14px]">
+              Cập nhật phương án &amp; Biên bản xử lý
+            </h3>
+</div>
+<span class="text-tertiary font-label-sm text-label-sm font-medium -mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+            Bắt buộc hoàn thành trường dữ liệu này trước khi đổi trạng thái đóng ticket
+          </span>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-outline" for="resolutionNotes">
+              Nội dung biện pháp khắc phục &amp; Chứng từ kho bù hàng:
+            </label>
+<textarea class="w-full p-2.5 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg outline-none focus:ring-2 focus:ring-primary shadow-inner resize-none" id="resolutionNotes" placeholder="Nhập chi tiết biện pháp khắc phục (vd: số biên bản đổi trả BB-234, số phiếu xuất kho bù hàng XK-9821, thời gian giao 100 gói dự phòng trước 14:00)..." rows="3"></textarea>
+</div>
+<!-- Required Checkbox -->
+<label class="flex items-start gap-2 cursor-pointer mt-0.5 select-none">
+<input class="mt-0.5 h-4 w-4 rounded accent-primary text-primary focus:ring-0 cursor-pointer" id="customerSignatureCheck" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface">
+              Đã có chữ ký xác nhận của đại diện khách hàng (Trưởng xưởng Fab 2) tại KCN
+            </span>
+</label>
+<!-- Drawer Action Button Bar -->
+<div class="flex items-center gap-space-sm pt-space-xs mt-1">
+<button class="flex-1 h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Tạm lưu cập nhật</span>
+</button>
+<button class="flex-1 h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm transition-colors flex items-center justify-center gap-1" id="closeTicketBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Hoàn tất &amp; Đóng ticket</span>
+</button>
+</div>
+<div class="flex items-center justify-center gap-1 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+<span>Hệ thống tự động đồng bộ sang hồ sơ nhà máy và gửi Email CSKH</span>
+</div>
+</div>
+</div>
+<!-- Quick Document Attachment List in Drawer Footer -->
+<div class="px-space-md py-space-sm bg-surface rounded-b-xl flex items-center justify-between text-outline font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">attach_file</span>
+<span>Tài liệu đính kèm (2): <em>BB_DoKiem_Bui_1015.pdf</em>, <em>Anh_Rach_Chankhong.jpg</em></span>
+</div>
+<button class="text-primary hover:underline font-semibold" type="button">+ Thêm file</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function highlightRow(rowElement) {
+    const allRows = rowElement.parentElement.querySelectorAll('tr');
+    allRows.forEach(r => {
+      r.classList.remove('bg-primary-fixed/20', 'bg-primary-fixed/30');
+      const bar = r.querySelector('.bg-tertiary-container');
+      if (bar && !r.contains(rowElement)) {
+        // Keep warning indicator if needed
+      }
+    });
+    rowElement.classList.add('bg-primary-fixed/20');
+  }
+
+  // Simple feedback when attempting to close ticket without filling required text
+  document.getElementById('closeTicketBtn')?.addEventListener('click', function() {
+    const textarea = document.getElementById('resolutionNotes');
+    const checkbox = document.getElementById('customerSignatureCheck');
+    
+    if (!textarea.value.trim() || !checkbox.checked) {
+      alert('VUI LÒNG BỔ SUNG: Bạn cần nhập chi tiết biện pháp khắc phục (số phiếu xuất kho/biên bản) và tích chọn xác nhận chữ ký khách hàng trước khi đóng ticket!');
+      textarea.focus();
+    } else {
+      alert('Ticket KN-2023-089 đã được cập nhật thành công và chuyển sang trạng thái: ĐÃ GIẢI QUYẾT.');
+    }
+  });
+</script></main></div></body></html>
