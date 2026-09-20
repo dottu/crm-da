@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CRM Đông Anh - Demo</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="demo-banner">⚠ BẢN DEMO — TOÀN BỘ DỮ LIỆU LÀ DỮ LIỆU MẪU (MOCKUP), KHÔNG PHẢI SỐ LIỆU KHÁCH HÀNG THẬT. Dữ liệu chỉ lưu tạm trong trình duyệt, sẽ mất khi tải lại trang.</div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">CRM<span>Đông Anh</span></div>
+      <nav>
+        <a href="#" data-view="dashboard" class="nav-item active">📊 Dashboard</a>
+        <a href="#" data-view="leads" class="nav-item">🌱 Khách hàng tiềm năng</a>
+        <a href="#" data-view="pipeline" class="nav-item">🧭 Pipeline / Cơ hội</a>
+        <a href="#" data-view="quotes" class="nav-item">📄 Báo giá</a>
+        <a href="#" data-view="complaints" class="nav-item">☎️ Chăm sóc &amp; Khiếu nại</a>
+        <a href="#" data-view="revenue" class="nav-item">💰 Doanh số hàng tháng</a>
+        <a href="#" data-view="customers" class="nav-item">🏢 Khách hàng</a>
+      </nav>
+      <div class="sidebar-note">Bản demo tĩnh (chạy hoàn toàn trên trình duyệt) · dữ liệu mẫu, không phải số liệu thật</div>
+    </aside>
+    <main class="content">
+      <header class="topbar">
+        <h1 id="view-title">Dashboard</h1>
+      </header>
+      <div id="view-root" class="view-root">Đang tải...</div>
+    </main>
+  </div>
+
+  <div id="modal-backdrop" class="modal-backdrop hidden">
+    <div class="modal" id="modal-box"></div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
